@@ -15,7 +15,7 @@ import {
  Link,
 //  Switch,
 //  Redirect
-} from '/react-router-dom';
+} from 'react-router-dom';
 
 
 class Total extends React.Component {

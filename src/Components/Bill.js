@@ -5,7 +5,7 @@ import './App.css';
 // import Attitude from './Attitude';
 import Total from './Total';
 import PropTypes from 'prop-types';
-import InputChanged from '../Services/InputChanged';
+//import InputChanged from '../Services/InputChanged';
 
 // import route Components here
 import {
@@ -14,18 +14,20 @@ import {
   Link,
 //  Switch,
 //  Redirect
-} from '/react-router-dom';
+} from 'react-router-dom';
 
 class Bill extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       price: 0,
-
     }
+  }
 
-    this.inputChanged = this.inputChanged.bind(this);
-    this.sendParent = this.sendParent.bind(this);
+InputChanged =(event)=> {
+
+   this.setState({ price:event.target.value });
+
   }
 
     render() {
@@ -42,7 +44,7 @@ class Bill extends React.Component {
                 onChange={(event) => this.InputChanged(event)}></input>
 
                 <Link to="/attitude" className="btn">--></Link>
-                //<Route path="/total" render={()=><Total tip={"340"}  />} />
+
 
                </div>
           </div>

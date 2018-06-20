@@ -10,7 +10,7 @@ import {
   Link,
 //  Switch,
 //  Redirect
-} from '/react-router-dom';
+} from 'react-router-dom';
 
 
 class Attitude extends Component {
