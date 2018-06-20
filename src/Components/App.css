@@ -1,0 +1,41 @@
+.wrapper {
+  border: 5px solid red;
+  height: 20rem;
+  text-align: center;
+}
+
+.center {
+  position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.inputField {
+  width: 50%;
+  height: 5rem;
+  font-size: 2rem;
+  text-align: right;
+}
+
+.btn {
+  margin-left: .2rem;
+  font-size: 3rem;
+  text-decoration: none;
+  border: 2px red solid;
+  border-radius: 20px;
+}
+
+.heading {
+  margin-top: 7rem;
+  }
+
+  .option {
+    text-decoration: none;
+    border: 2px red solid;
+    border-radius: 20px;
+    margin-left: .5rem;
+    padding: 15px;
+  }
