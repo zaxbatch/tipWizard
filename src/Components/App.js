@@ -27,6 +27,16 @@ class App extends React.Component {
 
   }
 
+  myCallback =(event)=> {
+
+    var a = document.getElementById('bill').value
+    //this.setState = { price: a };
+    // this.setState({ ticket:event.target.value });
+    this.setState({ ticket: a * 1.18 });
+
+    //alert(this.state.ticket);
+  }
+
     render() {
 
       console.log("state = ");
@@ -35,12 +45,13 @@ class App extends React.Component {
           <Router>
           <div className="wrapper center">
 
-            <Route exact path="/"  render={()=><Bill t/>} />
-            <Route path="/attitude" render={()=><Attitude />} />
-            <Route path="/speed" render={()=><Speed />} />
-            <Route path="/memory" render={()=><Memory />} />
-            <Route path="/crowd" render={()=><Crowd />} />
-            <Route path="/total" render={()=><Total />} />
+             <Route exact path="/"  render={()=><Bill test={this.myCallback}  />} />
+             <Route path="/attitude" render={()=><Attitude />} />
+             <Route path="/speed" render={()=><Speed />} />
+             <Route path="/memory" render={()=><Memory />} />
+             <Route path="/crowd" render={()=><Crowd />} />
+             <Route path="/total" render={()=><Total finally={this.state.ticket}/>} />
+
         </div>
         </Router>
 

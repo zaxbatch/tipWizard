@@ -25,10 +25,9 @@ class Bill extends React.Component {
   }
 
 InputChanged =(event)=> {
-
    this.setState({ price:event.target.value });
-
   }
+
 
     render() {
       console.log("bill state:",);
@@ -43,7 +42,8 @@ InputChanged =(event)=> {
                 <input type="number" id="bill" className="inputField" value={this.state.price}
                 onChange={(event) => this.InputChanged(event)}></input>
 
-                <Link to="/attitude" className="btn">--></Link>
+                <Link to="/attitude" className="btn"
+                      onClick={(event) => this.props.test(event)}>--></Link>
 
 
                </div>

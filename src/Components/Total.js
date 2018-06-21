@@ -25,16 +25,15 @@ class Total extends React.Component {
 
 
    render(props) {
-     console.log("TOTAL:", this.props.tip);
+     console.log("TOTAL:",);
 
        return (
          <div className="wrapper center">
              <div id="q2" className="heading">
-               <h3>Total {this.props.tip}</h3>
-               <input type="number" id="total" className="inputField"></input>
+               <h3>Total: ${this.props.finally}</h3>
+
                <Link to="/"  onClick={this.startOver} className="btn">Start Over</Link>
 
-               <h2>{}</h2>
               </div>
          </div>
      );
